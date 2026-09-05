@@ -9,15 +9,11 @@ import productsData from "./data/product";
 function App() {
 
   const [products] = useState(productsData);
-
   const [search, setSearch] = useState("");
-
   const [category, setCategory] = useState("all");
-
   const [sort, setSort] = useState("default");
-
   const [cart, setCart] = useState([]);
-
+  
 
   // Add product to cart
   const handleAddToCart = (product) => {
